@@ -36,3 +36,8 @@
 - **Android first** — owner's S24 Ultra, driver-community work phones, $0 build + one-time $25 Play fee at public launch.
 - **iOS second (post-launch phase)** — most Canadians carry iPhones; GigPilot's backend, data feeds, and accounts design are platform-neutral so an iOS build reuses everything except the app shell. Buildable without owning a Mac via GitHub Actions macOS runners (free for public repos). Costs at that stage: Apple Developer $99 USD/year; stricter review.
 - **Known iOS gap:** Android's notification-listener auto-logging has no iOS equivalent — iOS relies on imports + receipt email. Acceptable; flagged honestly in advance.
+
+## Performance requirement (owner rule — Nishan, 2026-11-13)
+- **The interface must run at a smooth 60 fps MINIMUM at all times** (and use the S24 Ultra's 120 Hz display where hardware allows). Jank is a release blocker, not a polish item.
+- Builder instructions: Jetpack Compose with lazy lists, no heavy work on the UI thread, all polling/database/network off the main thread, cheap GPU-light animations only, frame budget ~16 ms; profile with frame metrics during development.
+- Verification honesty: frame-rate profiling happens in development, but **final smoothness is judged by Nishan on his S24 Ultra** — his thumb is the acceptance test, exactly like his wallpaper app.
