@@ -71,6 +71,9 @@ Finding an open washroom at night is a real, nightly problem for drivers — thi
 - One-tap driver confirmations keep status live ("open 👍 / locked 🔒 / code required") — the same crowdsource engine as gas prices and airport queues.
 - Filters: open at THIS hour (night-first after 10 PM), no purchase needed, safe lit parking, cleanliness rating.
 - Also on the map: 24h coffee, safe rest spots for a fatigue break.
+- **Construction pit stops (driver knowledge — Nishan, 2026-11-13):** construction sites across the Lower Mainland (hundreds at any time) have portable toilets that are frequently unlocked and publicly accessible. Drivers can **report them in the app** — pin, unlocked/locked status, cleanliness, photo optional.
+  - These pins are **short-lived**: construction sites move and finish, so a pit-stop pin **auto-expires in ~14 days** unless another driver re-confirms it.
+  - Guardrail: report only units accessible from public space (street/sidewalk side) — never inside fenced sites. The app marks pins "driver-reported, public access" and removes disputed ones.
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
 - **Event radar**: Rogers Arena / BC Place events and start/end times as demand events.
