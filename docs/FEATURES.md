@@ -1,5 +1,11 @@
 # DriverLedger — Feature Specification
 
+## Interface & theme (driver requirements — Nishan, 2026-11-13)
+- **Glanceable home screen:** three huge numbers — live net $/hr, today's total, goal pace — readable in one second at a red light. One-thumb, zero typing for core actions. Positioning Score + next alert pinned at top.
+- **Auto day/night theme (owner rule):** **white/light interface in daytime, black interface at night, switching automatically** by local sunset/sunrise (location-based — Vancouver sunset ranges ~4:15 PM winter to ~9:20 PM summer, so never a fixed clock time). Night theme is true-black (OLED battery saving + no eye glare on night shifts).
+- Settings: Auto (default) / Always light / Always dark override. Theme switch must never flash mid-glance — apply instantly at switch moment, keep both themes' layouts identical so nothing moves.
+- Performance floor for all of the above: 60 fps minimum (see ROADMAP performance requirement).
+
 ## Wave 1 — Record (the ledger)
 
 ### Earnings core
