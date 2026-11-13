@@ -56,6 +56,12 @@
 - **Flight and ferry alerts are delivered DURING trips too** — while the driver has a passenger. The 40-minute lead exists precisely so the alert spans the current trip: it tells the driver where to go *after drop-off*. Do NOT suppress these alerts during trips.
 - Delivery style: standard glanceable notifications — never full-screen takeovers, never audible interruptions over navigation audio. One line, readable at a glance: what's coming, when, and the suggested move.
 
+### Flight alert tiers (driver requirement — Nishan, 2026-11-13)
+1. **Bank warning (~40 min out)** — strategic: an arrival wave is coming; plan the next move. Sent to drivers on shift.
+2. **Final approach (~5 min out)** — tactical, **geo-scoped to drivers near YVR** (~20 min away): "landing in ~5 minutes" so a nearby driver can note it and position.
+3. **Landed** — touchdown detected (ADS-B): immediate notification for nearby drivers.
+- Every flight alert includes: **flight number, origin, terminal class — International / Domestic / Transborder (US)** (YVR pickup zones differ by class) — and **estimated passengers**: aircraft seat capacity × typical load factor, **always labeled as an estimate** (exact souls-on-board is not public data; airlines do not publish it).
+
 ### Weather & region signals
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
