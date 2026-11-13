@@ -21,3 +21,14 @@ How the app gets real-time flights and ferries. Architecture rule: **one small b
 1. Backend detects an event (arrival bank ETA, ferry docking, cancellation).
 2. Computes lead time (driver setting: 20/40/60 min for flights; ~15 min for ferries).
 3. Sends FCM push only to drivers on shift or with a planned shift.
+
+## Weather (free)
+- **Open-Meteo** — free, no API key, hourly precipitation forecasts: powers Rain Money alerts (rain onset + timing for Metro Vancouver).
+- Environment and Climate Change Canada open data as a cross-check.
+
+## Backend hosting — free servers only (locked by Nishan, 2026-11-13)
+The tracking backend (polling flights, ferries, weather; sending pushes) must run at **$0**:
+- **Launch: GitHub Actions scheduled workflows** — cron polls every ~5 minutes inside this public repo (Actions is free for public repositories). Zero extra accounts, everything in one place.
+- **Alternative: Cloudflare Workers free tier** — cron triggers, generous free limits, good for polling + alert logic.
+- **Scale option: an always-free cloud VM (e.g., Oracle Cloud free tier) or Nishan's own hardware at home** (old PC / mini-PC running the poller 24/7, electricity only).
+- Push delivery: **Firebase Cloud Messaging — free** at any realistic scale for this app.
