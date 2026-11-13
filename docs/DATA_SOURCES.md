@@ -17,6 +17,12 @@ How the app gets real-time flights and ferries. Architecture rule: **one small b
 ## Freshness target
 "Real time" for our purpose = 3–5 minute freshness. A 40-minute warning does not need per-second data.
 
+## Refresh policy (locked with Nishan, 2026-11-13 — everything live, $0)
+- **Every second, on-device (free, no server):** the driver's own numbers — GPS position, shift timer, live net $/hr ticking, goal pacing. Local sensors, updates continuously.
+- **Near-real-time:** aircraft positions via ADS-B/OpenSky (~10-second position updates where coverage exists) for the YVR inbound view.
+- **Every 2–5 minutes, backend-polled + instant push on change:** flight status/banks, BC Ferries conditions, weather. The SOURCES themselves only publish new data every few minutes — polling faster returns identical data.
+- **Hard limit (do not build against this):** 1-second polling of third-party sources is not possible on free infrastructure — OpenSky/BC Ferries rate limits would ban the backend within a day, and no extra freshness exists to gain. Event-driven push (server detects change → FCM instantly) is how the app stays live within free limits.
+
 ## Alert pipeline
 1. Backend detects an event (arrival bank ETA, ferry docking, cancellation).
 2. Computes lead time (driver setting: 20/40/60 min for flights; ~15 min for ferries).
