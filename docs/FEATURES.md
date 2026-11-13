@@ -6,7 +6,7 @@
 - Settings: Auto (default) / Always light / Always dark override. Theme switch must never flash mid-glance — apply instantly at switch moment, keep both themes' layouts identical so nothing moves.
 - Performance floor for all of the above: 60 fps minimum (see ROADMAP performance requirement).
 - **Home-screen widget:** live net $/hr + next flight/ferry alert on the phone's home screen — glanceable without opening the app.
-- **UI languages:** English, Punjabi, Hindi, Mandarin, Tagalog, Spanish — Vancouver's driver fleet speaks all of them; the app should too. (Voice co-pilot launches Punjabi + English.)
+- **UI languages — as many as feasible (owner rule: add them all):** string-resource localization, shipped as progressive language packs. **First pack:** English, Punjabi, Hindi, Mandarin (Simplified), Cantonese, French, Spanish, Tagalog, Urdu. **Expansion pack:** Korean, Vietnamese, Arabic, Persian, Russian, Ukrainian, Gujarati, Tamil, Japanese. French matters beyond Vancouver — it opens Quebec/Montreal for the Canada-wide phase. Translations AI-drafted, then verified by native-speaking drivers in the community (crowd-corrected). Voice co-pilot still launches Punjabi + English (voice is harder than text).
 
 ## Wave 1 — Record (the ledger)
 
