@@ -32,6 +32,14 @@ How the app gets real-time flights and ferries. Architecture rule: **one small b
 - **Open-Meteo** — free, no API key, hourly precipitation forecasts: powers Rain Money alerts (rain onset + timing for Metro Vancouver).
 - Environment and Climate Change Canada open data as a cross-check.
 
+## Platform earnings data (Uber / Lyft / DoorDash) — honest routes
+The app needs the driver's trip/earnings data. There is no magic direct pipe; these are the doors, in launch order:
+1. **CSV / statement import (launch, free)** — drivers can download trip history and statements from Uber/Lyft/DoorDash; importing backfills a whole year in minutes. Annual tax summary import reconciles totals.
+2. **Receipt email parsing (launch, free)** — platforms email a receipt per trip; with the driver's permission, the app reads those receipts (or forwarded copies) and builds the ledger automatically.
+3. **Notification-based auto-logging (launch, free)** — with Android notification access (driver-granted), trip offers/completions from the Uber app are captured as they appear → automatic trip + earnings log, no typing.
+4. **Official APIs / aggregators (later, NOT free)** — Uber's driver-data API is partner-gated (approval required); aggregators that connect a driver's account exist but are paid B2B services. Pursue only if premium revenue justifies it — never part of the $0 build.
+- The app never stores the driver's Uber password; every route works on data the driver exports, receives, or explicitly grants. Records living OUTSIDE Uber is also the deactivation-shield promise.
+
 ## Backend hosting — free servers only (locked by Nishan, 2026-11-13)
 The tracking backend (polling flights, ferries, weather; sending pushes) must run at **$0**:
 - **Launch: GitHub Actions scheduled workflows** — cron polls every ~5 minutes inside this public repo (Actions is free for public repositories). Zero extra accounts, everything in one place.
