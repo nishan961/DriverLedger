@@ -31,3 +31,8 @@
 - Punjabi Voice Co-Pilot (hands-free)
 - Surrey benchmark (anonymous local averages) + invite rewards
 - Family view
+
+## Platforms (noted by Nishan, 2026-11-13)
+- **Android first** — owner's S24 Ultra, driver-community work phones, $0 build + one-time $25 Play fee at public launch.
+- **iOS second (post-launch phase)** — most Canadians carry iPhones; GigPilot's backend, data feeds, and accounts design are platform-neutral so an iOS build reuses everything except the app shell. Buildable without owning a Mac via GitHub Actions macOS runners (free for public repos). Costs at that stage: Apple Developer $99 USD/year; stricter review.
+- **Known iOS gap:** Android's notification-listener auto-logging has no iOS equivalent — iOS relies on imports + receipt email. Acceptable; flagged honestly in advance.
