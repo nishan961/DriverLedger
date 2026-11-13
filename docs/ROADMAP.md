@@ -1,5 +1,11 @@
 # DriverLedger — Roadmap
 
+## Build constraints (locked by Nishan, 2026-11-13)
+- **$0 build cost.** Free tiers and open data only — no paid APIs, no paid services at any stage of building or testing.
+- **v1 / v2 / v3 below is BUILD ORDER, not a paywall.** The test build ships with ALL features unlocked.
+- **Nishan personally tests the full build** on his S24 Ultra across several days of real shifts before any public release — and before any premium tier is switched on for other drivers.
+
+
 ## v1 (ship this first)
 - Shift tracking + live net $/hour
 - Multi-app earnings totals (manual/quick entry per platform)
