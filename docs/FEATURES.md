@@ -62,6 +62,11 @@
 - **Queue truth**: crowdsourced staging-lot wait times + estimate from flight volume.
 - Delayed-flight awareness; international vs domestic pickup-point guidance.
 
+### Queue Time Truth
+- The app **geofences the YVR staging lot**: entering starts an unpaid-wait timer, exiting stops it — fully automatic, no taps.
+- The driver's $/hr is the **honest** one: queue time included, not the platforms' engaged-time-only fiction.
+- Weekly insight: total queue hours, what they earned, and which days/times weren't worth it — so drivers can skip bad queue days.
+
 ### Ferry module (BC Ferries, live)
 - Real-time conditions for **Tsawwassen** and **Horseshoe Bay**: next sailings, deck-space availability, sailing waits, delays, cancellations.
 - **Push alerts before a ferry docks** (full sailings = 300+ people needing rides) and on cancellations (stranded crowds need drivers).
@@ -70,6 +75,7 @@
 ### Notification behavior (driver requirement — Nishan, 2026-11-13)
 - **Flight and ferry alerts are delivered DURING trips too** — while the driver has a passenger. The 40-minute lead exists precisely so the alert spans the current trip: it tells the driver where to go *after drop-off*. Do NOT suppress these alerts during trips.
 - Delivery style: standard glanceable notifications — never full-screen takeovers, never audible interruptions over navigation audio. One line, readable at a glance: what's coming, when, and the suggested move.
+- **Alert sounds:** each alert family has a **distinct gentle chime** (flight bank / ferry / money event) — drivers learn the sounds and know what's coming without looking at the screen. Sounds never override navigation audio; volume respects the phone's state.
 
 ### Flight alert tiers (driver requirement — Nishan, 2026-11-13)
 1. **Bank warning (~40 min out)** — strategic: an arrival wave is coming; plan the next move. Sent to drivers on shift.
@@ -109,6 +115,10 @@ Finding an open washroom at night is a real, nightly problem for drivers — thi
 
 ### Punjabi Voice Co-Pilot
 - Fully hands-free operation in Punjabi and English (BC distracted-driving law): spoken queries ("how much did I make today?"), spoken expense logging, spoken briefings.
+
+### Trip Check (voice offer verdict)
+- The driver **says an incoming offer out loud** ("$14 to Richmond, 25 minutes"); the co-pilot answers instantly with a **Take / Skip verdict** and the reason — effective $/hr vs the driver's floor, destination quality (dead zone vs demand wave, e.g., drops near an incoming ferry/flight bank), and deadhead-back cost.
+- 100% voice in/out — hands never leave the wheel, and it never touches the platform apps (consistent with the FORBIDDEN rules: no screen reading, no overlays; the driver's own voice is the input).
 
 ### Year in Review
 - Every January, a shareable story of the driver's year: total net, best day, best zone, longest shift, biggest flight bank caught. Lands at tax season — pairs naturally with the Tax Pack. Driver chooses what to share.
