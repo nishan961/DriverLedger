@@ -50,6 +50,7 @@
 - **Fatigue nudge**: quiet break reminders on long shifts.
 - **Family view**: household sees today's earnings live (opt-in).
 - **Punjabi + English UI**, voice-note expense logging.
+- **No-Show Timer**: when a rider doesn't show, the app runs the wait clock, alerts the driver the moment the platform's cancellation fee unlocks, and logs the wait as evidence for disputes.
 
 ## Wave 3 — Think (the smart layer)
 
@@ -99,7 +100,13 @@ Finding an open washroom at night is a real, nightly problem for drivers — thi
 ### One-tap navigation (driver requirement — Nishan, 2026-11-13)
 - Tapping ANY map pin — pit stop, washroom, gas/charging spot, ferry terminal, airport point — opens a detail card with live status and one big **Navigate** button.
 - One tap on Navigate hands off to the driver's maps app (Google Maps or Waze, their choice in settings) with the route started. Free: uses the phone's existing navigation apps via intents — no maps API cost in our app, no typing an address while driving.
+
+### Road Captain (reporter reputation)
+- The crowdsource trust system, gamified: drivers earn reputation when their reports (washrooms, pit stops, prices, queues) get verified by other drivers; pins need multiple confirmations before showing as "verified."
+- Top-ranked Road Captains earn **free premium** — the best data-suppliers become evangelists, and map quality polices itself. Fake/joke reports lose rank fast and get filtered.
+### Weather & region signals
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
+- **Snow Money**: snow-day protocol — early warning when snow is forecast (demand surges as drivers stay home), with road-safety notes attached; Rain Money's bigger brother.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
 - **Event radar**: Rogers Arena / BC Place events and start/end times as demand events.
 
