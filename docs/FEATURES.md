@@ -74,6 +74,10 @@ Finding an open washroom at night is a real, nightly problem for drivers — thi
 - **Construction pit stops (driver knowledge — Nishan, 2026-11-13):** construction sites across the Lower Mainland (hundreds at any time) have portable toilets that are frequently unlocked and publicly accessible. Drivers can **report them in the app** — pin, unlocked/locked status, cleanliness, photo optional.
   - These pins are **short-lived**: construction sites move and finish, so a pit-stop pin **auto-expires in ~14 days** unless another driver re-confirms it.
   - Guardrail: report only units accessible from public space (street/sidewalk side) — never inside fenced sites. The app marks pins "driver-reported, public access" and removes disputed ones.
+
+### One-tap navigation (driver requirement — Nishan, 2026-11-13)
+- Tapping ANY map pin — pit stop, washroom, gas/charging spot, ferry terminal, airport point — opens a detail card with live status and one big **Navigate** button.
+- One tap on Navigate hands off to the driver's maps app (Google Maps or Waze, their choice in settings) with the route started. Free: uses the phone's existing navigation apps via intents — no maps API cost in our app, no typing an address while driving.
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
 - **Event radar**: Rogers Arena / BC Place events and start/end times as demand events.
