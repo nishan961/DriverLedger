@@ -52,6 +52,10 @@
 - **Push alerts before a ferry docks** (full sailings = 300+ people needing rides) and on cancellations (stranded crowds need drivers).
 - **"Make the boat" calculator**: sailing time − check-in cutoff − live traffic = leave-by time.
 
+### Notification behavior (driver requirement — Nishan, 2026-11-13)
+- **Flight and ferry alerts are delivered DURING trips too** — while the driver has a passenger. The 40-minute lead exists precisely so the alert spans the current trip: it tells the driver where to go *after drop-off*. Do NOT suppress these alerts during trips.
+- Delivery style: standard glanceable notifications — never full-screen takeovers, never audible interruptions over navigation audio. One line, readable at a glance: what's coming, when, and the suggested move.
+
 ### Weather & region signals
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
