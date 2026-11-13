@@ -62,6 +62,8 @@
 3. **Landed** — touchdown detected (ADS-B): immediate notification for nearby drivers.
 - Every flight alert includes: **flight number, origin, terminal class — International / Domestic / Transborder (US)** — and **estimated passengers**: aircraft seat capacity × typical load factor, **always labeled as an estimate** (exact souls-on-board is not public data; airlines do not publish it).
 - Note (driver knowledge): YVR ride-hail pickup is **same-level** — drivers do NOT need pickup-zone guidance by class. The class still matters for **timing**: international passengers clear customs first, so their curb wave emerges later after touchdown (~30–45 min) than domestic (~10–15 min). Alert timing should account for this lag.
+- **Curb-arrival model (defaults set by Nishan, 2026-11-13):** after touchdown, the pickup wave reaches the curb at **~30 min (International)** and **~20 min (Domestic)**. **Transborder (US)** arrivals pre-clear customs on departure, so they behave like domestic (~20 min). Treat these as the *peak* of a wave, not a single moment: first passengers emerge ~10 min earlier, a tail follows later.
+- The model should refine itself over time: adjust for aircraft size (wide-bodies deplane slower), bank congestion (several internationals landing together slow customs), and eventually LEARN the true lag per flight from anonymized driver pickup data in the app.
 
 ### Weather & region signals
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
