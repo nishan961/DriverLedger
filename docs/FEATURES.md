@@ -65,7 +65,12 @@
 - **Curb-arrival model (defaults set by Nishan, 2026-11-13):** after touchdown, the pickup wave reaches the curb at **~30 min (International)** and **~20 min (Domestic)**. **Transborder (US)** arrivals pre-clear customs on departure, so they behave like domestic (~20 min). Treat these as the *peak* of a wave, not a single moment: first passengers emerge ~10 min earlier, a tail follows later.
 - The model should refine itself over time: adjust for aircraft size (wide-bodies deplane slower), bank congestion (several internationals landing together slow customs), and eventually LEARN the true lag per flight from anonymized driver pickup data in the app.
 
-### Weather & region signals
+### Driver Comfort Map — WASHROOMS FIRST (owner-flagged HIGH importance, 2026-11-13)
+Finding an open washroom at night is a real, nightly problem for drivers — this is a headline feature, not a footnote.
+- Map of washrooms with **open-now truth**: seeded from public place data (24h Tim Hortons / McDonald's / A&W, gas-station stores, malls, YVR, highway rest areas) and kept honest by **driver reports**: still open? locked? door code needed? clean?
+- One-tap driver confirmations keep status live ("open 👍 / locked 🔒 / code required") — the same crowdsource engine as gas prices and airport queues.
+- Filters: open at THIS hour (night-first after 10 PM), no purchase needed, safe lit parking, cleanliness rating.
+- Also on the map: 24h coffee, safe rest spots for a fatigue break.
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
 - **Border Watch**: live Peace Arch / Pacific Crossing wait times.
 - **Event radar**: Rogers Arena / BC Place events and start/end times as demand events.
