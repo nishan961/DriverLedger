@@ -1,6 +1,8 @@
-# DriverLedger
+# GigPilot (repo: DriverLedger)
 
 **An earnings, tax, and positioning co-pilot for gig drivers in Metro Vancouver, Canada.**
+
+**Branding:** Product name **GigPilot** (chosen by Nishan, 2026-11-13). App icon: amber map pin fused with a teal steering wheel on navy — `assets/logo/gigpilot-icon.png` (logo concept #1, chosen by Nishan).
 
 Built for Uber / Lyft / food-delivery drivers who multi-app and want their real numbers: true net $/hour, CRA-ready mileage and HST records, and live local intelligence (YVR flight banks, BC Ferries dockings, events, weather, border waits) delivered as push alerts *before* the demand wave hits.
 
