@@ -5,6 +5,8 @@
 - **Auto day/night theme (owner rule):** **white/light interface in daytime, black interface at night, switching automatically** by local sunset/sunrise (location-based — Vancouver sunset ranges ~4:15 PM winter to ~9:20 PM summer, so never a fixed clock time). Night theme is true-black (OLED battery saving + no eye glare on night shifts).
 - Settings: Auto (default) / Always light / Always dark override. Theme switch must never flash mid-glance — apply instantly at switch moment, keep both themes' layouts identical so nothing moves.
 - Performance floor for all of the above: 60 fps minimum (see ROADMAP performance requirement).
+- **Home-screen widget:** live net $/hr + next flight/ferry alert on the phone's home screen — glanceable without opening the app.
+- **UI languages:** English, Punjabi, Hindi, Mandarin, Tagalog, Spanish — Vancouver's driver fleet speaks all of them; the app should too. (Voice co-pilot launches Punjabi + English.)
 
 ## Wave 1 — Record (the ledger)
 
@@ -28,6 +30,13 @@
 - Import Uber's official **annual tax summary** PDF when it is issued (Jan–Feb) to reconcile the year exactly.
 - Fuel/expense history: receipt-by-receipt or bank statement (CSV) import for major items.
 - From install day forward, the app records everything itself; backfill is a one-time onboarding step.
+
+### Zero-setup first run
+- Open the app, tap **Start Shift**, earning in 10 seconds. No interrogation onboarding — taxes, backfill, and settings introduce themselves later, when relevant.
+- Day-one hook: import last year's platform statement and the app immediately shows the driver's **true net $/hr for last year** — the number that sells the app.
+
+### End-of-Shift Report Card
+- Ending a shift produces one clean summary card: net earned, $/hr, best hour, km, vs-yesterday. Designed to be screenshot-shareable (driver chooses to share; nothing auto-posts) — organic reach in driver group chats.
 
 ## Wave 2 — Protect
 
@@ -100,3 +109,6 @@ Finding an open washroom at night is a real, nightly problem for drivers — thi
 
 ### Punjabi Voice Co-Pilot
 - Fully hands-free operation in Punjabi and English (BC distracted-driving law): spoken queries ("how much did I make today?"), spoken expense logging, spoken briefings.
+
+### Year in Review
+- Every January, a shareable story of the driver's year: total net, best day, best zone, longest shift, biggest flight bank caught. Lands at tax season — pairs naturally with the Tax Pack. Driver chooses what to share.
