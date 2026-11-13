@@ -60,7 +60,8 @@
 1. **Bank warning (~40 min out)** — strategic: an arrival wave is coming; plan the next move. Sent to drivers on shift.
 2. **Final approach (~5 min out)** — tactical, **geo-scoped to drivers near YVR** (~20 min away): "landing in ~5 minutes" so a nearby driver can note it and position.
 3. **Landed** — touchdown detected (ADS-B): immediate notification for nearby drivers.
-- Every flight alert includes: **flight number, origin, terminal class — International / Domestic / Transborder (US)** (YVR pickup zones differ by class) — and **estimated passengers**: aircraft seat capacity × typical load factor, **always labeled as an estimate** (exact souls-on-board is not public data; airlines do not publish it).
+- Every flight alert includes: **flight number, origin, terminal class — International / Domestic / Transborder (US)** — and **estimated passengers**: aircraft seat capacity × typical load factor, **always labeled as an estimate** (exact souls-on-board is not public data; airlines do not publish it).
+- Note (driver knowledge): YVR ride-hail pickup is **same-level** — drivers do NOT need pickup-zone guidance by class. The class still matters for **timing**: international passengers clear customs first, so their curb wave emerges later after touchdown (~30–45 min) than domestic (~10–15 min). Alert timing should account for this lag.
 
 ### Weather & region signals
 - **Rain Money**: rain onset alerts tied to the driver's own rainy-day earnings uplift.
