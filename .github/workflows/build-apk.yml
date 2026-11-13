@@ -1,0 +1,31 @@
+name: Build APK
+
+on:
+  push:
+    branches: [copilot-build]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build debug APK
+        run: |
+          if [ -f ./gradlew ]; then
+            chmod +x ./gradlew
+            ./gradlew assembleDebug --no-daemon
+          else
+            echo "No Gradle wrapper yet - project not scaffolded."
+          fi
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: gigpilot-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: warn
